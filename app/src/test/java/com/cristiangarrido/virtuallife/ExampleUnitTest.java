@@ -1,4 +1,4 @@
-package me.cgarrido.virtuallife;
+package com.cristiangarrido.virtuallife;
 
 import org.junit.Test;
 

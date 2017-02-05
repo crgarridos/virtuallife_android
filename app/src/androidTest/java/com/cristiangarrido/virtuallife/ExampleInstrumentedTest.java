@@ -1,4 +1,4 @@
-package me.cgarrido.virtuallife;
+package com.cristiangarrido.virtuallife;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("me.cgarrido.virtuallife", appContext.getPackageName());
+        assertEquals("com.cristiangarrido.virtuallife", appContext.getPackageName());
     }
 }
