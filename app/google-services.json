@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "292405912892",
+    "firebase_url": "https://virtual-life-49861.firebaseio.com",
+    "project_id": "virtual-life-49861",
+    "storage_bucket": "virtual-life-49861.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292405912892:android:538180c9df0e07e9",
+        "android_client_info": {
+          "package_name": "com.cristiangarrido.virtuallife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292405912892-2c4flkvj2543cs3tehmqejo7uf2jfqnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuix9NhTbu68lP0T66e4OKG44YEDC1Ix4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
