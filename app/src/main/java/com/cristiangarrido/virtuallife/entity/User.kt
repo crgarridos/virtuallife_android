@@ -1,4 +1,4 @@
-package com.cristiangarrido.virtuallife.model
+package com.cristiangarrido.virtuallife.entity
 
 /**
  * Created by cristian on 09/02/17.

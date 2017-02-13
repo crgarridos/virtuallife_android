@@ -1,19 +1,14 @@
 package com.cristiangarrido.virtuallife
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.cristiangarrido.virtuallife.base.BaseActivity
-import com.cristiangarrido.virtuallife.model.User
-import kotlinx.android.synthetic.main.activity_main.*
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.DatabaseError
+import com.cristiangarrido.virtuallife.entity.User
 import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-
-
-
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : BaseActivity() {
