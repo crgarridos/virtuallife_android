@@ -40,6 +40,7 @@ import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
+import timber.log.Timber
 
 /**
  * Demonstrate Firebase Authentication using a Google ID Token.
@@ -211,7 +212,7 @@ class GoogleSignInActivity : BaseActivity(), GoogleApiClient.OnConnectionFailedL
     override fun onConnectionFailed(connectionResult: ConnectionResult) {
         // An unresolvable error has occurred and Google APIs (including Sign-In) will not
         // be available.
-        Log.d(TAG, "onConnectionFailed:" + connectionResult)
+        Timber.d(TAG, "onConnectionFailed:" + connectionResult)
         Toast.makeText(this, "Google Play Services error.", Toast.LENGTH_SHORT).show()
     }
 
@@ -228,7 +229,7 @@ class GoogleSignInActivity : BaseActivity(), GoogleApiClient.OnConnectionFailedL
 
     companion object {
 
-        private val TAG = "GoogleActivity"
+        private val TAG = GoogleSignInActivity::class.java.simpleName
         private val RC_SIGN_IN = 9001
     }
 }

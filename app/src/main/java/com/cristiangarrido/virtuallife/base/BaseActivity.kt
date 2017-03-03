@@ -4,12 +4,13 @@ import android.app.ProgressDialog
 import android.content.Intent
 import android.support.annotation.VisibleForTesting
 import android.support.v7.app.AppCompatActivity
+import com.arellomobile.mvp.MvpAppCompatActivity
 import com.cristiangarrido.virtuallife.R
 
 /**
  * Created by cristian on 10/02/17
  */
-open class BaseActivity : AppCompatActivity() {
+open class BaseActivity : MvpAppCompatActivity() {
 
     @VisibleForTesting
     var mProgressDialog: ProgressDialog? = null
