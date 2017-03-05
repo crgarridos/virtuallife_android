@@ -2,12 +2,13 @@ package com.cristiangarrido.virtuallife
 
 import android.os.Bundle
 import com.cristiangarrido.virtuallife.base.BaseActivity
-import com.cristiangarrido.virtuallife.tutorial.GithubRepo
-import com.cristiangarrido.virtuallife.tutorial.GithubService
+import com.cristiangarrido.virtuallife.core.GithubRepo
+import com.cristiangarrido.virtuallife.core.GithubService
 import org.jetbrains.anko.toast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import retrofit2.Retrofit
 import timber.log.Timber
 
 
@@ -52,9 +53,7 @@ class MainActivity : BaseActivity() {
     private fun lalalale() {
         toast("Hello world !")
 
-        val service = VirtualLifeApplication.get(this).retrofit
-
-        val github = service.create(GithubService::class.java)
+        val github = VirtualLifeApp.get(this).component.getGithubService()
 
         github.getUserRepos("crgarridos").enqueue(object : Callback<List<GithubRepo>>{
             override fun onFailure(call: Call<List<GithubRepo>>, t: Throwable) {

@@ -3,7 +3,7 @@
     package="com.cristiangarrido.virtuallife">
 
     <application
-        android:name=".VirtualLifeApplication"
+        android:name=".VirtualLifeApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

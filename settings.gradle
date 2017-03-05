@@ -1,1 +1,3 @@
-include ':app'
+include ':vlife-android', ':vlife-core'
+project(':vlife-android').projectDir = new File('app')
+project(':vlife-core').projectDir = new File('core')

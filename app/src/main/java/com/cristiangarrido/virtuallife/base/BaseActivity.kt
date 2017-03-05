@@ -6,6 +6,7 @@ import android.support.annotation.VisibleForTesting
 import android.support.v7.app.AppCompatActivity
 import com.arellomobile.mvp.MvpAppCompatActivity
 import com.cristiangarrido.virtuallife.R
+import com.cristiangarrido.virtuallife.VirtualLifeApp
 
 /**
  * Created by cristian on 10/02/17
@@ -38,5 +39,7 @@ open class BaseActivity : MvpAppCompatActivity() {
 
     fun <T> startActivity(activity : Class<T> ){
     }
+
+    fun getVirtualLifeApp() = application as VirtualLifeApp
 
 }
